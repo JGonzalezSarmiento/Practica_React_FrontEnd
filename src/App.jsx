@@ -155,13 +155,10 @@ function App() {
             <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
               <img src="/react-svgrepo-com.svg" className="logo react" alt="React logo" />
             </a>
-            <p>Desarrollado por 💻 Johanna González</p>
-            <p>Ramo: FrontEnd - Profesor: Nicolás Lira</p>
-            <p>Evaluación 3 - Vespertino</p>
+            <p><span className='negrita'> Desarrollado por</span> 💻 <span className= "johanna"> Johanna González </span> <br></br> <span className='negrita'>Ramo: </span> FrontEnd - <span className='negrita'>Profesor:</span> Nicolás Lira <br></br> Evaluación 3 - Vespertino</p>
             <a href="C:\Escritorio\Proyectos_2025\React\evaluacion-3-johanna-gonzalez-vespertino\public\inacap-seeklogo.png" target="_blank" rel="noopener noreferrer">
-              <img src="/inacap-seeklogo.png" className="logo" alt="Inacap logo" />
+              <img src="/inacap-seeklogo.png" className="logo" alt="Inacap logo" /><br></br><p> <span className='negrita'> Apoquindo ❤️</span></p>
             </a>
-            <p> Apoquindo ❤️</p>
           </footer>
   </>
   

@@ -148,4 +148,22 @@ body{
   display: inline-block;
 } 
 
+.footer {
+  font-family: 'Raleway', sans-serif, 'Dancing Script', 'cursive';
+  font-size: 0.9rem;
+  color: rgba(71, 66, 66, 0.85); /* Texto más claro */
+  letter-spacing: -0.0px; /* Letras más juntas (ligero ajuste) */
+  font-weight: 300; /* Fuente más delgada (opcional) */
+}
 
+.johanna {
+  font-family: 'Rochester', cursive;
+  font-size: 1.1rem;
+  color: #f41dc5; /* Color rosa */
+  margin-top: 10px; /* Espacio superior */
+}
+
+.negrita {
+  font-weight: bold;
+  color: #212021; /* Color rosa */
+}
