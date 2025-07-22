@@ -14,7 +14,6 @@ function App() {
     return match ? match[1].replace('-', ' ') : 'Raza desconocida';
   };
 
-  // ✅ Obtener varios perros de forma paralela
   const fetchMultipleDogs = async (count = 0) => {
     try {
       const fetches = Array.from({ length: count }, () => fetch(BASE_URL));
@@ -43,7 +42,6 @@ function App() {
     }
   };
 
-  // ✅ Obtener un solo perro
   const fetchDog = async () => {
     try {
       const response = await fetch(BASE_URL);
@@ -67,17 +65,14 @@ function App() {
     }
   };
 
-  // ✅ Mostrar el arreglo actualizado solo cuando cambia dogData
   useEffect(() => {
     console.log('🐶 Nuevo arreglo actualizado:', dogData);
   }, [dogData]);
 
-  // ✅ Cargar 2 perros al inicio
   useEffect(() => {
     fetchMultipleDogs(1);
   }, []);
 
-  // ✅ Buscar por raza (mínimo 3 letras)
   const searchItems = (value) => {
     setSearchValue(value);
 
@@ -138,12 +133,26 @@ function App() {
           </div>
         ))}
       </div>
-
+        
       <div className="row">
         <div className="col-12">
           <button className="boton-personalizado mt-4" onClick={fetchDog}>
-            Ver otro perrito
+            Ver otro perrito...
           </button>
+          <p className="mt-2">
+            <span className="negrita">Total de perritos:</span> {dogData.length}
+          </p><br></br>
+          <p className="mt-2">
+            <span className="negrita">¡Haz clic <span className="mano">👆🏼</span>
+              en el botón para ver más!</span>
+          </p>
+          <p className="mt-2">
+            <span className="negrita">Conoce a estos adorables perritos:</span>🐶
+          </p>
+          <p className="mt-2">
+            <span className="negrita">¡Cada perro es único y especial <span className="huellitas">🐾</span>
+                   porque cada uno tiene su propia historia!</span> 📖
+          </p>
         </div>
       </div>
     </div>
@@ -155,9 +164,9 @@ function App() {
             <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
               <img src="/react-svgrepo-com.svg" className="logo react" alt="React logo" />
             </a>
-            <p><span className='negrita'> Desarrollado por</span> 💻 <span className= "johanna"> Johanna González </span> <br></br> <span className='negrita'>Ramo: </span> FrontEnd - <span className='negrita'>Profesor:</span> Nicolás Lira <br></br> Evaluación 3 - Vespertino</p>
+            <p><span className='negrita'> Desarrollado por</span> 💻 <span className= "johanna"> Johanna González </span> <br></br> <span className='negrita'>Ramo: </span> Front End - <span className='negrita'>Profesor:</span> Nicolás Lira <br></br> Evaluación 3 - Vespertino</p>
             <a href="C:\Escritorio\Proyectos_2025\React\evaluacion-3-johanna-gonzalez-vespertino\public\inacap-seeklogo.png" target="_blank" rel="noopener noreferrer">
-              <img src="/inacap-seeklogo.png" className="logo" alt="Inacap logo" /><br></br><p> <span className='negrita'> Apoquindo ❤️</span></p>
+              <img src="/inacap-seeklogo.png" className="logo" alt="Inacap logo" /><br></br><p> <span className='negrita'> Apoquindo</span><span className='corazon'>❤️</span></p>
             </a>
           </footer>
   </>

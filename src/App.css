@@ -43,6 +43,26 @@ body{
   animation: logo-spin infinite 20s linear;
 } 
 
+@keyframes latido {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+}
+
+.corazon {
+  animation: latido 1.2s infinite ease-in-out;
+  display: inline-block;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -151,19 +171,78 @@ body{
 .footer {
   font-family: 'Raleway', sans-serif, 'Dancing Script', 'cursive';
   font-size: 0.9rem;
-  color: rgba(71, 66, 66, 0.85); /* Texto más claro */
-  letter-spacing: -0.0px; /* Letras más juntas (ligero ajuste) */
-  font-weight: 300; /* Fuente más delgada (opcional) */
+  color: rgba(71, 66, 66, 0.85); 
+  letter-spacing: -0.0px; 
+  font-weight: 300; 
 }
 
 .johanna {
-  font-family: 'Rochester', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 1.1rem;
-  color: #f41dc5; /* Color rosa */
-  margin-top: 10px; /* Espacio superior */
+  color: #f41dc5; 
+  margin-top: 10px; 
 }
 
 .negrita {
   font-weight: bold;
-  color: #212021; /* Color rosa */
+  color: #212021; 
 }
+
+.mano {
+  animation: sube-baja 1s infinite ease-in-out;
+  font-size: 2rem;
+  color: #ff4d4f; 
+}
+
+.mano {
+  animation: sube-baja 1s infinite ease-in-out;
+  font-size: 2rem;
+  color: #ff4d4f; 
+}
+@keyframes sube-baja {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.mano:hover {
+  color: #ff1a1a; 
+  transform: scale(1.2); 
+}
+
+@keyframes sube-baja {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.mano {
+  animation: sube-baja 1s infinite ease-in-out;
+  display: inline-block;
+  font-size: 2rem; 
+}
+@keyframes sube-baja {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.mano:hover {
+  color: #ff1a1a; 
+  transform: scale(1.2); 
+}
+
+
+.huellitas {
+  display: inline-block;
+  font-size: 2rem;
+  position: relative;
+}
+
